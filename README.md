@@ -16,6 +16,7 @@ My Arch Linux rice for my desktop.
         - Spotify (spotify-launcher)
         - SwayNotificationCenter (swaync)
     - Neovim (nvim)
+    - Recurisve Mono Nerd font (ttf-recursive-nerd)
     - Waybar
     - Yazi
 2. Copy and paste everything from this repo's .config/ folder into your .config/ folder.
