@@ -19,6 +19,7 @@ My Arch Linux rice for my desktop.
         - SwayNotificationCenter (swaync)
         - uwsm
     - Neovim (nvim)
+    - otf-font-awesome
     - Recurisve Mono Nerd font (ttf-recursive-nerd)
     - Waybar
     - Yazi
