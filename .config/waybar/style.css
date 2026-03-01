@@ -104,6 +104,7 @@ widget > *:not(#workspaces) {
 
 #workspaces button.urgent {
   color: @bright_red;
+  text-decoration: underline;
 }
 
 /* ===================== */

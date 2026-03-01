@@ -6,8 +6,8 @@
   "margin-left": 8,
   "margin-right": 8,
   "margin-top": 8,
-  "margin-bottom": 8,
-  "spacing": 16,
+  "margin-bottom": 0,
+  "spacing": 24,
 
   // Choose the order of the modules
   "modules-left": [
@@ -17,7 +17,7 @@
     "temperature"
   ],
   "modules-center": [
-	    "hyprland/workspaces"
+    "hyprland/workspaces"
   ],
   "modules-right": [
     "pulseaudio",
