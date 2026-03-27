@@ -116,16 +116,16 @@ local theme = lush(function(injected_functions)
     CursorLineFold {  fg=bright_red, bg=dark_red }, -- Like FoldColumn when 'cursorline' is set for the cursor line
     CursorLineSign { }, -- Like SignColumn when 'cursorline' is set for the cursor line
     MatchParen     { fg=bright_purple }, -- Character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
-    ModeMsg        { fg=fg1, bg=dark_blue }, -- 'showmode' message (e.g., "-- INSERT -- ", "recording @")
+    ModeMsg        { fg=fg1, bg=dark_blue }, -- 'showmode' message (e.g. "-- INSERT -- ", "recording @")
     MsgArea        { fg=fg5 }, -- Area for messages and cmdline
     MsgSeparator   { bg=bg1 }, -- Separator for scrolled messages, `msgsep` flag of 'display'
-    MoreMsg        {  fg=bright_red, bg=dark_red }, -- |more-prompt|
+    MoreMsg        { fg=bright_yellow }, -- |more-prompt|
     NonText        { fg=fg5 }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal         { fg=fg0 }, -- Normal text
     NormalFloat    { fg=fg0, bg=bg1 }, -- Normal text in floating windows.
     FloatBorder    {  fg=bright_red, bg=dark_red }, -- Border of floating windows.
     FloatTitle     {  fg=bright_red, bg=dark_red }, -- Title of floating windows.
-    NormalNC       { fg=fg5, bg=bg1 }, -- normal text in non-current windows
+    NormalNC       { fg=fg5 }, -- normal text in non-current windows
     Pmenu          { fg=fg1, bg=bg1 }, -- Popup menu: Normal item.
     PmenuSel       { fg=fg0, bg=bg3, gui="bold"}, -- Popup menu: Selected item.
     PmenuKind      {  fg=bright_red, bg=dark_red }, -- Popup menu: Normal item "kind"
@@ -147,7 +147,7 @@ local theme = lush(function(injected_functions)
     TabLine        {  fg=bright_red, bg=dark_red }, -- Tab pages line, not active tab page label
     TabLineFill    {  fg=bright_red, bg=dark_red }, -- Tab pages line, where there are no labels
     TabLineSel     {  fg=bright_red, bg=dark_red }, -- Tab pages line, active tab page label
-    Title          {  fg=bright_red, bg=dark_red }, -- Titles for output from ":set all", ":autocmd" etc.
+    Title          { fg=fg0, gui="bold" }, -- Titles for output from ":set all", ":autocmd" etc.
     Visual         { bg=bg5 }, -- Visual mode selection
     VisualNOS      {  fg=bright_red, bg=dark_red }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg     { fg=bright_yellow }, -- Warning messages
