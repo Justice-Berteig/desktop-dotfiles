@@ -13,13 +13,15 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# If not running interactively don't do anything
+# If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 alias ls='ls -a --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
-alias yazi="~/.local/bin/yaziccwd.sh"
+
+# Custom aliases
+alias yazi="~/.local/bin/yazi-persist-cwd.sh"
 
 # Custom prompt
 PROMPT='%F{4}%5~%f %B%F{15}%#%f%b '
@@ -28,4 +30,4 @@ PROMPT='%F{4}%5~%f %B%F{15}%#%f%b '
 PROMPT_EOL_MARK=''
 
 # Run fastfetch on start
-fastfetch
+# fastfetch

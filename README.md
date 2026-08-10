@@ -27,5 +27,7 @@ My Arch Linux rice for my desktop.
 3. Grab the wallpaper and put it somewhere.
     - Change the wallpaper path in .config/hypr/hyprpaper.conf to point wherever you put the wallpaper.
 4. Copy the script from scripts/ into your .local/bin/ folder.
-    - Alternatively edit .config/hypr/variables.conf and change `~/.local/bin/yaziccwd.sh` to `yazi`.
+    - Alternatively don't use the scripts and instead:
+        1. Edit .config/hypr/application.lua and change `~/.local/bin/yazi-persist-cwd.sh` to `yazi`.
+        2. Edit .config/hypr/keybinds.lua and remove the bind that executes the command `~/.local/bin/foot-duplicate-cwd.sh`
 5. Add .zprofile, .zshenv, .zshrc to your home folder.
