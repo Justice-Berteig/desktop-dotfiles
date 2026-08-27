@@ -1,35 +1,43 @@
 [mgr]
-cwd = { fg="green" }
-find_keyword = {
-    fg="lightmagenta",
+cwd           = { fg="green" }
+find_keyword  = {
+    fg="lightyellow",
     bold=true,
     italic=true,
     underline=true
 }
+find_position = {
+    fg="lightyellow",
+    bold=true,
+    italic=true
+}
+border_style  = {
+    fg="brightyellow",
+}
 
 [indicator]
-parent = { bg="green" }
-current = { bg="green", bold=true }
-preview = { bg="green" }
+parent  = { bg="yellow" }
+current = { bg="yellow", bold=true }
+preview = { bg="yellow" }
 padding = { open="█", close="█" }
 
 [mode]
 normal_main = { fg="white", bg="green" }
-normal_alt = { fg="black", bg="gray" }
+normal_alt  = { fg="black", bg="gray" }
 select_main = { fg="white", bg="cyan" }
-select_alt = { fg="black", bg="gray" }
-unset_main = { fg="white", bg="blue" }
-unset_alt = { fg="black", bg="gray" }
+select_alt  = { fg="black", bg="gray" }
+unset_main  = { fg="white", bg="blue" }
+unset_alt   = { fg="black", bg="gray" }
 
 [status]
-overall = { fg="white", bg="darkgray" }
-sep_left = { open="█", close="█" }
-sep_right = { open="█", close="█" }
-perm_type = { fg="white" }
-perm_read = { fg="blue" }
+overall    = { fg="white", bg="darkgray" }
+sep_left   = { open="█", close="█" }
+sep_right  = { open="█", close="█" }
+perm_type  = { fg="white" }
+perm_read  = { fg="blue" }
 perm_write = { fg="green" }
-perm_exec = { fg="red" }
-perm_sep = { fg="gray" }
+perm_exec  = { fg="red" }
+perm_sep   = { fg="gray" }
 
 [pick]
 border = { fg="brightyellow" }
@@ -44,13 +52,14 @@ border = { fg="brightyellow" }
 rules = [
     { mime="image/*", fg="lightyellow" },
     { mime="video/*", fg="lightred" },
-    { url="*/", fg="lightcyan" }
+    { url="*" , fg="white" },
+    { url="*/", fg="lightgreen" }
 ]
 
 [icon]
 prepend_conds = [
-    { if="dir & hidden", text="", fg="cyan" },
-    { if="dir", text="", fg="cyan" },
+    { if="dir & hidden", text="", fg="lightgreen" },
+    { if="dir", text="", fg="lightgreen" },
     { if="!dir & !link & exec", text="", fg="lightyellow" },
     { if="!dir & hidden", text="", fg="grey" },
     { if="!dir", text="", fg="grey" }

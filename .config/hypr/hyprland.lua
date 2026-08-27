@@ -17,10 +17,10 @@ require("window_rules")
 -------------------
 
 hl.config({
-  misc = {
-    disable_hyprland_logo      = true,
-    force_default_wallpaper    = -1,
-    initial_workspace_tracking = 2,
-    middle_click_paste         = false,
-  },
+    misc = {
+        disable_hyprland_logo      = true,
+        force_default_wallpaper    = -1,
+        initial_workspace_tracking = 2,
+        middle_click_paste         = false,
+    },
 })

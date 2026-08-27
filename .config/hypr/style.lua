@@ -6,49 +6,49 @@
 require("colours")
 
 hl.config({
-  general = {
-    gaps_in  = 4,
-    gaps_out = 4,
+    general = {
+        gaps_in  = 6,
+        gaps_out = 24,
 
-    border_size = 3,
+        border_size = 2,
 
-    col = {
-      active_border   = dark_blue,
-      inactive_border = bg0,
+        col = {
+            active_border   = dark_yellow,
+            inactive_border = bg2,
+        },
+
+        resize_on_border = false,
+
+        allow_tearing = false,
+
+        layout = "dwindle",
     },
 
-    resize_on_border = false,
+    decoration = {
+        rounding       = 12,
+        rounding_power = 3,
 
-    allow_tearing = false,
+        active_opacity   = 0.92,
+        inactive_opacity = 0.54,
 
-    layout = "dwindle",
-  },
+        shadow = {
+            enabled      = false,
+            range        = 4,
+            render_power = 3,
+            color        = bg1,
+        },
 
-  decoration = {
-    rounding       = 3,
-    rounding_power = 10,
-
-    active_opacity   = 0.92,
-    inactive_opacity = 0.67,
-
-    shadow = {
-      enabled      = false,
-      range        = 4,
-      render_power = 3,
-      color        = bg1,
+        blur = {
+            enabled  = true,
+            size     = 3,
+            passes   = 3,
+            vibrancy = 1,
+        },
     },
 
-    blur = {
-      enabled  = true,
-      size     = 10,
-      passes   = 3,
-      vibrancy = 0.14,
+    animations = {
+        enabled = true,
     },
-  },
-
-  animations = {
-    enabled = true,
-  },
 })
 
 -- See https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/ for more

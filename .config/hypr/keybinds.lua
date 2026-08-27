@@ -67,10 +67,10 @@ hl.bind(mainMod .. " + ALT + J"    , hl.dsp.window.resize({ x=0  , y= 48 , relat
 
 -- Switch and move workspaces
 for i = 1, 10 do
-  local key = i % 10 -- 10 maps to key 0
-  hl.bind(mainMod .. " + "         .. key, hl.dsp.focus(      { workspace = i }))
-  hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i, follow = false }))
-  hl.bind(mainMod .. " + CTRL + "  .. key, hl.dsp.window.move({ workspace = i, follow = true }))
+    local key = i % 10 -- 10 maps to key 0
+    hl.bind(mainMod .. " + "         .. key, hl.dsp.focus(      { workspace = i }))
+    hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i, follow = false }))
+    hl.bind(mainMod .. " + CTRL + "  .. key, hl.dsp.window.move({ workspace = i, follow = true }))
 end
 
 -- Move through workspaces with scroll wheel
