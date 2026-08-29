@@ -52,7 +52,14 @@ hl.window_rule({
 hl.window_rule({
     name    = "firefox-no-transparency",
     match   = { class = "firefox" },
-    opacity = "1.0 override",
+    opaque  = true,
+})
+
+-- Remove transparency from Krita
+hl.window_rule({
+    name    = "krita-no-transparency",
+    match   = { class = "krita" },
+    opaque  = true,
 })
 
 -- Allow immediate mode rendering for games
