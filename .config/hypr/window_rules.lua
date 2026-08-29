@@ -23,7 +23,7 @@ hl.window_rule({
     no_focus = true,
 })
 
--- Rules for special btop workspace
+-- Rules for special btop window
 hl.window_rule({
     name  = "btop-special-workspace",
     match = { class = "specialbtop" },
@@ -48,11 +48,21 @@ hl.window_rule({
     no_initial_focus = true,
 })
 
--- Remove transparency from Firefox
+-- Force Steam to start in special workspace
 hl.window_rule({
-    name    = "firefox-no-transparency",
-    match   = { class = "firefox" },
-    opaque  = true,
+    name             = "steam-starting-workspace",
+    match            = { class = "steam" },
+    workspace        = "special:steam",
+})
+
+-- Remove transparency from Firefox
+-- Also unset workspace because it was being forced into workspace 1 for some reason.
+hl.window_rule({
+    name             = "firefox-no-transparency",
+    match            = { class = "firefox" },
+    opaque           = true,
+    workspace        = "unset",
+    no_initial_focus = false,
 })
 
 -- Remove transparency from Krita
