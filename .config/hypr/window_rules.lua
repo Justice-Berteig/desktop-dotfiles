@@ -65,11 +65,14 @@ hl.window_rule({
     no_initial_focus = false,
 })
 
--- Remove transparency from Krita
+-- Make terminal slightly transparent even when active
 hl.window_rule({
-    name    = "krita-no-transparency",
-    match   = { class = "krita" },
-    opaque  = true,
+    name    = "terminal-active-transparency",
+    match   = {
+        class="foot",
+        focus=true,
+    },
+    opacity = "0.92 override",
 })
 
 -- Allow immediate mode rendering for games
