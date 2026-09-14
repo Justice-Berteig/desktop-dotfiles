@@ -1,5 +1,5 @@
 -- Set the colour scheme
-vim.cmd("colorscheme metalheart")
+vim.cmd("colorscheme forest")
 
 -- Basic settings
 vim.opt.number = true

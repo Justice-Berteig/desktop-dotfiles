@@ -1,4 +1,4 @@
 return {
   "rktjmp/lush.nvim",
-  { dir = "~/.config/nvim/colourschemes/metalheart", lazy = true },
+  { dir = "~/.config/nvim/colourschemes/forest", lazy = true },
 }

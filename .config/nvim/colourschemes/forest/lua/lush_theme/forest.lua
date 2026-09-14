@@ -167,32 +167,32 @@ local theme = lush(function(injected_functions)
 
     Comment        { fg=dark_green, bg=Normal.bg, gui="italic" }, -- Any comment
 
-    Constant       { fg=dark_red }, -- (*) Any constant
+    Constant       { fg=dark_blue }, -- (*) Any constant
     String         { fg=bright_yellow }, --   A string constant: "this is a string"
     Character      { fg=dark_yellow }, --   A character constant: 'c', '\n'
     Number         { fg=bright_purple }, --   A number constant: 234, 0xff
     Boolean        { fg=dark_purple }, --   A boolean constant: TRUE, false
     Float          { fg=bright_purple }, --   A floating point constant: 2.3e10
 
-    Identifier     { fg=bright_cyan }, -- (*) Any variable name
-    Function       { fg=bright_cyan }, --   Function name (also: methods for classes)
+    Identifier     { fg=bright_green }, -- (*) Any variable name
+    Function       { fg=bright_green }, --   Function name (also: methods for classes)
 
-    Statement      { fg=bright_blue }, -- (*) Any statement
-    Conditional    { fg=bright_blue }, --   if, then, else, endif, switch, etc.
-    Repeat         { fg=bright_blue }, --   for, do, while, etc.
-    Label          { fg=bright_blue }, --   case, default, etc.
-    Operator       { fg=bright_cyan }, --   "sizeof", "+", "*", etc.
+    Statement      { fg=fg3 }, -- (*) Any statement
+    Conditional    { fg=fg3 }, --   if, then, else, endif, switch, etc.
+    Repeat         { fg=fg3 }, --   for, do, while, etc.
+    Label          { fg=fg3 }, --   case, default, etc.
+    Operator       { fg=fg1 }, --   "sizeof", "+", "*", etc.
     Keyword        { fg=bright_purple }, --   any other keyword
     Exception      { fg=bright_red }, --   try, catch, throw
 
-    PreProc        { fg=dark_blue }, -- (*) Generic Preprocessor
+    PreProc        { fg=dark_purple }, -- (*) Generic Preprocessor
     -- Include        { fg=bright_red, bg=dark_red  }, --   Preprocessor #include
     -- Define         {  fg=bright_red, bg=dark_red }, --   Preprocessor #define
     -- Macro          {  fg=bright_red, bg=dark_red }, --   Same as Define
     -- PreCondit      {  fg=bright_red, bg=dark_red }, --   Preprocessor #if, #else, #endif, etc.
 
-    Type           { fg=bright_blue }, -- (*) int, long, char, etc.
-    StorageClass   { fg=bright_red }, --   static, register, volatile, etc.
+    Type           { fg=bright_cyan }, -- (*) int, long, char, etc.
+    StorageClass   { fg=bright_blue }, --   static, register, volatile, etc.
     Structure      { fg=bright_cyan }, --   struct, union, enum, etc.
     -- Typedef        {  fg=bright_red, bg=dark_red }, --   A typedef
 
