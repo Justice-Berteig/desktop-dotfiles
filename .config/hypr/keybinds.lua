@@ -23,7 +23,8 @@ hl.bind(mainMod .. " + D"        , hl.dsp.exec_cmd("~/.local/bin/foot-duplicate-
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"))
 
 -- Screenshot
-hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("grim -g \"$(slurp -d)\" - | wl-copy"))
+hl.bind(mainMod .. " + Z"        , hl.dsp.exec_cmd("grim -g \"$(slurp -d)\" - | wl-copy"))
+hl.bind(mainMod .. " + SHIFT + Z", hl.dsp.exec_cmd("grim -g \"$(slurp -d)\" ~/images/screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png"))
 
 -- Notifications
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(NOTIFICATION_CENTER))
@@ -78,13 +79,13 @@ hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. " + mouse_up"  , hl.dsp.focus({ workspace = "e-1" }))
 
 -- Special workspaces
-hl.bind(mainMod .. " + S"        , hl.dsp.workspace.toggle_special("magic"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
-hl.bind(mainMod .. " + CTRL + S" , hl.dsp.window.move({ workspace = "special:magic", follow = true }))
+hl.bind(mainMod .. " + S"        , hl.dsp.workspace.toggle_special("steam"))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:steam" }))
+hl.bind(mainMod .. " + CTRL + S" , hl.dsp.window.move({ workspace = "special:steam", follow = true }))
 
-hl.bind(mainMod .. " + A"        , hl.dsp.workspace.toggle_special("specialbtop"))
-hl.bind(mainMod .. " + SHIFT + A", hl.dsp.window.move({ workspace = "special:specialbtop" }))
-hl.bind(mainMod .. " + CTRL + A" , hl.dsp.window.move({ workspace = "special:specialbtop", follow = true }))
+hl.bind(mainMod .. " + A"        , hl.dsp.workspace.toggle_special("btop"))
+hl.bind(mainMod .. " + SHIFT + A", hl.dsp.window.move({ workspace = "special:btop" }))
+hl.bind(mainMod .. " + CTRL + A" , hl.dsp.window.move({ workspace = "special:btop", follow = true }))
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind("XF86AudioRaiseVolume" , hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
